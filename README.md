@@ -38,10 +38,10 @@ adapter_config:
   transformer_adp_config:  # config adapter for transformer block
     - type: inout # inout is the only valid value
       din: attn1i  # the input position of adapter, 
-      						 # must in  [ "attn1i", "attn1o", "attn2i", "attn2o", "attn2c", "ffni", "ffno", "transo"]
+      # must in  [ "attn1i", "attn1o", "attn2i", "attn2o", "attn2c", "ffni", "ffno", "transo"]
 
       dout: attn1i # the output position of adapter
-      						 # must in ["attn1i", "attn2i", "ffni", "transo", "attn2c"]
+      # must in ["attn1i", "attn2i", "ffni", "transo", "attn2c"]
 
       mid_dim: 60 # the mid dim of adapter, which determid determine the adapter size
       method: "default" # the activate function, default as Relu, must in ["relu", "sig", "silu", "ident", "default"]
